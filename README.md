@@ -4,14 +4,14 @@ A GNOME Shell extension that resides in the top dash/panel to monitor OpenVPN se
 
 ## Features
 
-- **Systemd Service Monitoring**: Checks whether `openvpn-client@kflihan.service` (or your configured service) is active.
+- **Systemd Service Monitoring**: Checks whether `openvpn-client@client.service` (or your configured service) is active.
 - **Traffic / Interface Ping Test**: Pings `8.8.8.8` directly through the specified interface (`tun0`) to verify true end-to-end routing.
 - **Color-Coded Status Icon**:
   - 🟢 **Green**: Service is running and ping succeeds (VPN fully online).
   - 🟡 **Yellow**: Service is running but ping fails (VPN interface up, but connection broken).
   - 🔴 **Red**: Service is stopped / inactive.
 - **Configurable Settings via GUI**:
-  - `Service Name` (Default: `openvpn-client@kflihan.service`)
+  - `Service Name` (Default: `openvpn-client@client.service`)
   - `Interface Name` (Default: `tun0`)
   - `Ping Target` (Default: `8.8.8.8`)
   - `Check Interval` (Default: `5` seconds)

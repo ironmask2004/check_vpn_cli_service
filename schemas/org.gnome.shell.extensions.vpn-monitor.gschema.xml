@@ -2,7 +2,7 @@
 <schemalist gettext-domain="gnome-shell-extension-vpn-monitor">
   <schema id="org.gnome.shell.extensions.vpn-monitor" path="/org/gnome/shell/extensions/vpn-monitor/">
     <key name="service-name" type="s">
-      <default>'openvpn-client@kflihan.service'</default>
+      <default>'openvpn-client@client.service'</default>
       <summary>VPN systemd service name</summary>
       <description>Name of the systemd service to check</description>
     </key>

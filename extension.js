@@ -117,7 +117,7 @@ export default class VpnMonitorExtension extends Extension {
     }
 
     async _restartService() {
-        const serviceName = this._settings.get_string('service-name') || 'openvpn-client@kflihan.service';
+        const serviceName = this._settings.get_string('service-name') || 'openvpn-client@client.service';
         this._titleItem.label.text = _('VPN Monitor: Restarting...');
         
         // Use pkexec so user gets polkit GUI password prompt if needed
@@ -139,7 +139,7 @@ export default class VpnMonitorExtension extends Extension {
         this._isChecking = true;
 
         try {
-            const serviceName = this._settings.get_string('service-name') || 'openvpn-client@kflihan.service';
+            const serviceName = this._settings.get_string('service-name') || 'openvpn-client@client.service';
             const interfaceName = this._settings.get_string('interface-name') || 'tun0';
             const pingTarget = this._settings.get_string('ping-target') || '8.8.8.8';
             const pingTimeout = this._settings.get_int('ping-timeout') || 2;
