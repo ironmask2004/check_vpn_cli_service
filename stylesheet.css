@@ -1,0 +1,15 @@
+.vpn-status-icon {
+    icon-size: 16px;
+}
+
+.vpn-status-ok {
+    color: #33d17a; /* Green */
+}
+
+.vpn-status-degraded {
+    color: #f6d32d; /* Yellow / Orange */
+}
+
+.vpn-status-down {
+    color: #e01b24; /* Red */
+}

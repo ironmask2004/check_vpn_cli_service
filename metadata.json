@@ -1,0 +1,16 @@
+{
+  "name": "VPN Service & Connectivity Monitor",
+  "description": "Monitors OpenVPN client systemd service status and active connectivity ping via VPN interface.",
+  "uuid": "vpn-monitor@kflihan.github.com",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.vpn-monitor",
+  "gettext-domain": "gnome-shell-extension-vpn-monitor",
+  "version": 1
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extension-vpn-monitor">
+  <schema id="org.gnome.shell.extensions.vpn-monitor" path="/org/gnome/shell/extensions/vpn-monitor/">
+    <key name="service-name" type="s">
+      <default>'openvpn-client@kflihan.service'</default>
+      <summary>VPN systemd service name</summary>
+      <description>Name of the systemd service to check</description>
+    </key>
+    <key name="interface-name" type="s">
+      <default>'tun0'</default>
+      <summary>VPN network interface</summary>
+      <description>Network interface to test ping through</description>
+    </key>
+    <key name="check-interval" type="i">
+      <default>5</default>
+      <summary>Check interval in seconds</summary>
+      <description>Interval between VPN status checks in seconds</description>
+    </key>
+    <key name="ping-target" type="s">
+      <default>'8.8.8.8'</default>
+      <summary>Ping target IP/Host</summary>
+      <description>Target to ping through the VPN interface</description>
+    </key>
+    <key name="ping-timeout" type="i">
+      <default>2</default>
+      <summary>Ping timeout in seconds</summary>
+      <description>Timeout in seconds for ping check</description>
+    </key>
+  </schema>
+</schemalist>
